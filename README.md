@@ -46,4 +46,4 @@ Image Names:
 
 #### Registry:
 Pushed to:
-      docker.io/la1255/mysqlclient-docker
+      https://hub.docker.com/r/la1255/mysqlclient-docker/
