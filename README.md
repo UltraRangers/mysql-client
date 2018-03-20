@@ -3,7 +3,7 @@
 ### What is this repository for? ###
 
 * Intended to be used for Bitbucket Pipelines as a step for executing db tasks that are normally not allowed in environments, such as CREATE DATABASE or other setups or initialization.
-* NOTE: this is not a server. This is a client instance used to run commands to a server. Update the environment variables in your bitbucket-pipelines to use your MYSQL server instance credentials.
+* NOTE: **this is not a server**. This is a client instance used to run commands to a server. Update the environment variables in your bitbucket-pipelines to use your MYSQL server instance credentials.
 
 #### In `bitbucket-pipelines.yml` file:
 ```
@@ -20,7 +20,7 @@ pipelines:
     - step:
         # your mysql client instance
         name: Setup Test DB Schema
-        image: la1255/mysqlclient-docker:latest
+        image: ultrarangers/mysql-client:latest
         services:
           - mysql
         script:
@@ -39,7 +39,7 @@ pipelines:
 
 ### Published at
 Image Names:
-
+master: `ultrarangers\mysql-client:latest`
 
 #### Registry:
 Pushed to:
